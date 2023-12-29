@@ -1,4 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 App Template with Tailwind 
+
+## App structure
+- Main page with different sections / default layout
+- Admin pages with seperate menu / admin layout
+- Login / Register side (only input, connection with auth module must be integrated indidually)
+
+## App features
+- Dark color mode
+- Individual Google Font
+- easy to customize colors (primary / secondary colors in tailwind.config.js
+- components for input fields / admin accoudion
+- sample pages
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
