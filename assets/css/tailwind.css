@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* header style */
+  header a {
+    @apply text-4xl font-bold text-primary-dark dark:text-primary-light;
+  }
+  header button {
+    @apply text-primary-light dark:text-primary-dark
+     bg-primary-dark dark:bg-primary-light
+      hover:bg-primary-light dark:hover:bg-primary-dark
+      hover:text-primary-dark dark:hover:text-primary-light
+       dark:focus:ring-primary-dark  focus:ring-primary-light
+      focus:outline-none focus:ring-4
+      font-medium rounded-full text-sm px-5 py-2.5 text-center me-2;
+  }
+  /* header style */
+  footer {
+    @apply text-primary-dark dark:text-primary-light;
+  }
+
+  /* nav style */
+  nav button {
+    @apply p-2 text-sm font-medium text-center rounded-lg text-primary-light dark:text-primary-dark bg-primary-dark dark:bg-primary-light hover:bg-primary-light dark:hover:bg-primary-dark hover:text-primary-dark dark:hover:text-primary-light dark:focus:ring-primary-dark focus:ring-primary-light focus:outline-none focus:ring-4 me-2;
+  }
+
+  /* section style */
+  section h1 {
+    @apply bg-gradient-to-r from-primary-light to-primary-default;
+  }
+
+  /* admin styles */
+  .admin_content {
+    @apply p-4 mb-4 bg-secondary-light dark:bg-secondary-dark rounded-xl h-96;
+  }
+
+  /* admin styles  - admin menu */
+  aside {
+    @apply overflow-hidden bg-primary-light;
+  }
+
+  aside h1 {
+    @apply block mb-4 text-xl font-bold text-primary-dark;
+  }
+
+  aside li {
+    @apply relative h-20;
+  }
+
+  aside a {
+    @apply relative flex flex-row items-center h-12 py-4 ml-2 text-base justify-items-center rounded-l-xl text-primary-dark;
+  }
+
+  aside .active {
+    @apply bg-secondary-light dark:bg-secondary-dark text-primary-light dark:text-primary-dark rounded-l-2xl;
+  }
+
+  aside .top_layer_back {
+    @apply absolute -top-3.5 h-[15px] w-full bg-secondary-light dark:bg-secondary-dark;
+  }
+  aside .top_layer_up {
+    @apply absolute -top-3.5 h-[15px] w-full rounded-br-2xl bg-primary-light;
+  }
+
+  aside .bottom_layer_back {
+    @apply absolute top-12 left-0 h-[15px] w-full bg-secondary-light dark:bg-secondary-dark;
+  }
+  aside .bootom_layer_up {
+    @apply absolute top-12 left-0 h-[15px] w-full bg-primary-light rounded-tr-2xl;
+  }
+
+  aside .icon {
+    @apply w-12 h-12 px-2 text-center;
+  }
+
+  /* styles */
+  p {
+    @apply mb-3 text-slate-800 dark:text-primary-dark;
+  }
+}
